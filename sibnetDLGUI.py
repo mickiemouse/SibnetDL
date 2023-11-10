@@ -29,7 +29,7 @@ class DownloaderThread(QThread):
                 url = url
                 downloadLink = url.split(";")[0]
                 fileName = url.split(";")[1]
-                finalDest = self.destinationFolder + '/' + fileName.replace('\n', '').replace(' ', '') + '.mp4'
+                finalDest = self.destinationFolder + '/' + fileName.replace('\n', '') + '.mp4'
                 obj = SmartDL(downloadLink, dest=finalDest, progress_bar=False, request_args={'headers': headers})
                 obj.start(blocking=False)
                 self.started_download.emit(fileName)
