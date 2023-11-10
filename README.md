@@ -2,48 +2,52 @@
 
 # SibnetDL
 
-## Genel Bakış
+## Overview
 
-SibnetDL, PyQt5 ve pySmartDL kullanılarak geliştirilmiş, video indirme işlemleri için kullanıcı dostu bir arayüz sunan Python tabanlı bir uygulamadır. Bu araç, metin dosyasında bulunan çeşitli kaynaklardan video indirme görevlerini yönetmenizi sağlar.
+SibnetDL is a Python-based application offering a user-friendly interface for downloading videos from a list of URLs. This tool utilizes PyQt5 for its GUI and pySmartDL for downloading videos. The application allows users to manage video download tasks from sibnet.ru links provided in a text file. 
 
-### Özellikler
+**Note:** _This app specifically get sibnet links from [cizgivedizi.com](https://www.cizgivedizi.com)_
 
-- **URL Listesi Oluşturma**: Video indirmek için URL listesi oluşturun.
-- **İndirme Linklerini Alma**: Video indirme için linkleri edinin.
-- **Video İndirme**: Sağlanan linklerden videoları indirin.
-- **Kullanıcı Dostu Arayüz**: Sorunsuz bir kullanıcı deneyimi için temiz ve basit bir arayüz.
+### Features
 
-## Kurulum
+- **URL List Creation**: Generate a list of URLs for video download.
+- **Download Link Retrieval**: Obtain links for downloading videos.
+- **Video Download**: Download videos from sibnet.ru links.
+- **User-friendly Interface**: A clean and straightforward UI for a seamless user experience.
 
-1. Python'un yüklü olduğundan emin olun.
-2. Depoyu yerel makinenize klonlayın.
-3. Gerekli paketleri yükleyin: `pip install -r requirements.txt`.
-4. Uygulamayı çalıştırın: `python sibnetDL.py`.
+## Installation
 
-## Kullanım
+1. Ensure you have Python installed.
+2. Clone the repository to your local machine.
+3. Install the required packages: `pip install -r requirements.txt`.
+4. Run the application: `python sibnetDL.py`.
 
-1. **URL Listesi Oluşturma**
-    - "Oluştur" sekmesine tıklayın ve URL ile video bölümlerinin toplam sayısını girin.
-    - "Bölüm Linklerini Oluştur" seçeneğine tıklayarak URL içeren bir dosya oluşturun.
+Or you can download lastest [Release](https://github.com/mickiemouse/SibnetDL/releases).
 
-2. **İndirme Linklerini Alma**
-    - "Çek" sekmesine tıklayarak oluşturulan URL listesinden indirme linklerini alın.
-    - İstenen dosyayı ve hedef klasörü seçin.
+## Usage
 
-3. **Videoları İndirme**
-    - URL'leri içeren metin dosyasını ve hedef klasörü seçin.
-    - İndirme işlemini başlatmak için "Başlat" seçeneğine tıklayın.
+1. **Creating a URL List**
+    - Click on the "Create" tab and fill in the URL and the total number of video episodes.
+    - Click "Generate Episode Links" to create a file containing the URLs.
 
-## Katkılar
+2. **Retrieving Download Links**
+    - Click on the "Retrieve" tab to extract download links from the generated URL list.
+    - Select the desired file and destination folder.
 
-Katkılarınızı bekliyoruz! Önemli değişiklikler için önce bir konu açarak tartışabilirsiniz.
+3. **Downloading Videos**
+    - Choose the text file with the URLs and the destination folder.
+    - Click "Start" to initiate the download process.
 
-1. Depoyu çatallayın (fork).
-2. Özellik dalı oluşturun: `git checkout -b özellik/HarikaÖzellik`.
-3. Değişikliklerinizi kaydedin: `git commit -m 'HarikaÖzellik ekle'`.
-4. Dalı ana depoya gönderin: `git push origin özellik/HarikaÖzellik`.
-5. Bir birleştirme isteği (pull request) açın.
+## Contribution
 
-## Lisans
+Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-GLPv3 Lisansı altında dağıtılır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
+1. Fork the repository.
+2. Create your feature branch: `git checkout -b feature/AmazingFeature`.
+3. Commit your changes: `git commit -m 'Add some AmazingFeature'`.
+4. Push to the branch: `git push origin feature/AmazingFeature`.
+5. Open a pull request.
+
+## License
+
+Distributed under the GPLv3 License. See `LICENSE` for more information.
